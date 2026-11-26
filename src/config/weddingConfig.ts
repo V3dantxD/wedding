@@ -1,3 +1,9 @@
+export interface StudioCreator {
+  name: string;
+  phoneDisplay: string;
+  phoneHref: string;
+}
+
 export interface FamilySide {
   heading: string;
   city: string;
@@ -94,6 +100,13 @@ export interface WeddingConfig {
     revealedTimeLabel: string;
     revealedNumericDate: string;
     revealedCelebrationNote: string;
+  };
+  studioCredits: {
+    buttonLabel: string;
+    eyebrow: string;
+    heading: string;
+    subheading: string;
+    creators: StudioCreator[];
   };
 }
 
@@ -220,5 +233,23 @@ export const weddingConfig: WeddingConfig = {
     revealedTimeLabel: "Friday · Five Thirty in the Evening",
     revealedNumericDate: "19 · 02 · 2027",
     revealedCelebrationNote: "The date is yours — we cannot wait to celebrate with you.",
+  },
+  studioCredits: {
+    buttonLabel: "Created By",
+    eyebrow: "Bespoke Digital Atelier",
+    heading: "Created By",
+    subheading: "For custom luxury digital wedding invitations, reach out directly.",
+    creators: [
+      {
+        name: "Vedant Baria",
+        phoneDisplay: "+91 7016982179",
+        phoneHref: "tel:+917016982179",
+      },
+      {
+        name: "Vishvam Trivedi",
+        phoneDisplay: "+91 7229021666",
+        phoneHref: "tel:+917229021666",
+      },
+    ],
   },
 };

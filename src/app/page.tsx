@@ -1,4 +1,5 @@
 import { WeddingNavigation } from "@/components/navigation/WeddingNavigation";
+import { CreatedByButton } from "@/components/navigation/CreatedByButton";
 import { FlowerPetals } from "@/components/animations/FlowerPetals";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { InvitationSection } from "@/components/sections/InvitationSection";
@@ -13,6 +14,7 @@ export default function HomePage() {
   return (
     <>
       <WeddingNavigation />
+      <CreatedByButton />
 
       {/* Scroll-linked illustrated petals flowing across Section 01 through end of Section 02 */}
       <FlowerPetals />
